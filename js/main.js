@@ -10,7 +10,6 @@ let linkbutton4 = document.getElementById('link-button4');
 let listlink4 = document.getElementById('list-link4');
 let linkbutton5 = document.getElementById('link-button5');
 let listlink5 = document.getElementById('list-link5');
-let footer = document.getElementById('footer');
 
 menuBtn.addEventListener('click', function () {
     menuBtn.classList.toggle('active-btn');
