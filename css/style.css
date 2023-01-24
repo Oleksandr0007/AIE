@@ -216,7 +216,7 @@ body{
 .header-ad__content{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 90px);
     background: #FEE8CE;
     z-index: 10000;
     transform: translateX(-100%);
@@ -289,6 +289,10 @@ body{
 
 .listopen{
     display: block;
+}
+
+.hide-content {
+    overflow-y: hidden;
 }
 
 /* nav adaptive style */
@@ -1018,6 +1022,9 @@ body{
     }
     .header-ad__top {
         height: 62px;
+    }
+    .header-ad__content {
+        height: calc(100vh - 62px);
     }
     .logo-adaptive {
         width: 38.21px;
