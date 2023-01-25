@@ -1,3 +1,52 @@
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 220,
+    slidesPerGroup: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        400: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 2,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        },
+        500: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        },
+        791: {
+            slidesPerView: 2,
+            spaceBetween: 70,
+            slidesPerGroup: 2,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        },
+        875: {
+            slidesPerView: 3,
+            spaceBetween: 38,
+            slidesPerGroup: 3,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        },
+    },
+});
+// end slider
+// adaptiv nav
 let menuBtn = document.getElementById('menu-btn');
 let menu = document.getElementById('transform');
 let linkbutton = document.getElementById('link-button');
@@ -53,7 +102,7 @@ linkbutton5.addEventListener('click', function () {
     listlink.classList.remove('listopen');
 })
 
-
+// end adptive nav
 // popup
 
 const openModalButtons   =  document.querySelectorAll('[data-modal-target]')
